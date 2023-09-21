@@ -1,21 +1,21 @@
 {
-  "name": "parcel-handlebars",
+  "name": "pagination-hw",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Veronika2007931.github.io/parcel-handlebars",
+  "homepage": "https://Veronika2007931.github.io/pagination-hw",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-handlebars/"
+    "build": "parcel build src/*.html --public-url /pagination-hw/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Veronika2007931/parcel-handlebars.git"
+    "url": "git+https://github.com/Veronika2007931/pagination-hw.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Veronika2007931/parcel-handlebars/issues"
+    "url": "https://github.com/Veronika2007931/pagination-hw/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
