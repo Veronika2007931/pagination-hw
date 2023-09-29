@@ -1,12 +1,12 @@
-const BASE_URL = 'https://api.pexels.com/v1/search'
+const BASE_URL = 'https://pixabay.com/api/'
 const options = {
     headers:{
-        'X-Api-Key': 'NR2vXElcbXkoqh3dAvwhrvtqdClLKGTJx9990ny0uRtRmrCfHY8oVl7Z'
+        'X-Api-Key': '39207305-3cafba90fc720ccc598cbdff4'
     }
 }
 
 export class PixApi {
-    
+
     constructor(){
      this.query = ''
       this.page = 1
@@ -14,8 +14,8 @@ export class PixApi {
 
    searchImg(){
         return fetch(`${BASE_URL}?query=${this.query}&page=${this.page}&per_page=20`,options)
-        .than((responce)=>{responce.json()})
-        .than((articles)=>{
+        .then((responce)=>{responce.json()})
+        .then((articles)=>{
             this.increasePage
         return articles.articles}
     )
