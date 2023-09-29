@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.pexels.com/api/documentation/#photos-search'
+const BASE_URL = 'https://api.pexels.com/v1/search'
 const options = {
     headers:{
         'X-Api-Key': 'NR2vXElcbXkoqh3dAvwhrvtqdClLKGTJx9990ny0uRtRmrCfHY8oVl7Z'
@@ -6,13 +6,14 @@ const options = {
 }
 
 export class PixApi {
+    
     constructor(){
-     this.qwery = ''
+     this.query = ''
       this.page = 1
     }
 
    searchImg(){
-        return fetch(`${BASE_URL}?q=${this.qwery}&page=${this.page}&per_page=20`,options)
+        return fetch(`${BASE_URL}?query=${this.query}&page=${this.page}&per_page=20`,options)
         .than((responce)=>{responce.json()})
         .than((articles)=>{
             this.increasePage

@@ -10,7 +10,7 @@ form.addEventListener('submit', onFormSubmit)
 
 function onFormSubmit(event){
     event.preventDefault()
-api.qwery = event.currentTarget.elements.qwery.value
+api.query = event.currentTarget.elements.query.value
 api.resetPage()
 api.increasePage()
 }
@@ -23,10 +23,10 @@ function onBtnClick(){
 }
 
 
-function createMarkup(articles) {  
-    const markup = articlesTpl(articles)
-    articlesContainerRef.insertAdjacentHTML('beforeend', markup)  
-}
+// function createMarkup(articles) {  
+//     const markup = articlesTpl(articles)
+//     articlesContainerRef.insertAdjacentHTML('beforeend', markup)  
+// }
 
 
 
